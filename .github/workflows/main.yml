@@ -18,6 +18,24 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+    - name: Install Node.js, npm, and sass on server
+      run: |
+        ssh -o StrictHostKeyChecking=no netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr << 'EOF'
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+          command -v nvm || echo 'nvm command not found'
+          nvm install 18 || echo 'Failed to install Node.js'
+          nvm use 18 || echo 'Failed to use Node.js version 18'
+
+          command -v npm || echo 'npm command not found'
+          npm install -g sass || echo 'Failed to install sass'
+          command -v sass || echo 'sass command not found'
+        EOF
+      env:
+        SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+
     - name: Debug Info - Environment
       run: |
         echo "Running as $(whoami)"
@@ -26,11 +44,11 @@ jobs:
 
     - name: Debug Info - SSH Connection
       run: |
-        ssh -o StrictHostKeyChecking=no  netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr "echo 'SSH connection established' && ls -al /var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/pixelea"
+        ssh -o StrictHostKeyChecking=no netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr "echo 'SSH connection established' && ls -al /var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/netto-decor"
 
     - name: Sync files to Plesk
       run: |
-        rsync -avz --delete --exclude '.git/' ./ netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr:/var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/pixelea
+        rsync -avz --delete --exclude '.git/' ./ netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr:/var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/netto-decor
       env:
         SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
 
