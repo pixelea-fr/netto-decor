@@ -71,16 +71,20 @@ body.blog-1{
     }
     h3{
     font-weight: bold;
-    content: "";
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid transparent;
-    border-left: 0.5rem solid var(--wp--preset--color--custom-red);
+    position: relative;
+    padding-left: 2rem;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 0.5rem solid transparent;
+            border-bottom: 0.5rem solid transparent;
+            border-left: 0.5rem solid var(--wp--preset--color--custom-red);
+        }
     }
     ul{
         list-style-type: square;
