@@ -34,6 +34,11 @@ body.blog-1{
                 width: 100%;
             }
         }
+        .wp-block-gallery{
+            img{
+                object-fit: contain;
+            }
+        }
 
     }
     .wp-block-navigation__container.is-vertical{
