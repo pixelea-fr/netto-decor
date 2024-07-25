@@ -24,12 +24,16 @@ jobs:
         echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
         cat ~/.ssh/known_hosts  # For debugging purposes
 
-    - name: Install Node.js and sass on server
+    - name: Install Node.js and sass in user space
       run: |
         ssh -o StrictHostKeyChecking=no netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr << 'EOF'
-          sudo apt update
-          sudo apt install -y nodejs npm
-          sudo npm install -g sass
+          # Téléchargez et installez nvm (Node Version Manager)
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          nvm install 18
+          nvm use 18
+          npm install -g sass
           sass --version
         EOF
       env:
@@ -45,6 +49,9 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr << 'EOF'
           set -e  # Exit immediately if a command exits with a non-zero status
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          nvm use 18
           bash /var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/netto-decor/.deploy/deploy.sh
           echo "Deploy script executed successfully."
         EOF
