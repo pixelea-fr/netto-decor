@@ -55,6 +55,28 @@ body.blog-1{
             padding-bottom: 0.3rem;
             background: #e2e4e5;
             width: 100%;
+            overflow: hidden;
+            transition:all .4s;
+
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-top: 1rem solid transparent;
+                border-bottom: 1rem solid transparent;
+                border-left: 1rem solid #e2e4e5;
+            }
+            &:hover{
+                background: var(--wp--preset--color--custom-blue);
+                &:before{
+                    transform: translateX(0) translateY(-50%);
+                }
+            }
 
         }
     }
