@@ -148,13 +148,19 @@ body.blog-1{
         gap: 1rem;
         input, textarea{
             padding: .3em .5em !important; 
-            border-radius: .5rem !important;  
+            border-radius: .3rem !important;  
             border-width: 1px !important;
+
+        }
+        label{
+            display: block;
+            margin-bottom: .5rem;
         }
         p{
             display: contents;
         }
         >div{
+            gap: 1rem;
             display: flex;
         }
     }
