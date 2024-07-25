@@ -1,4 +1,7 @@
 body.blog-1{
+   .is-style-list-logo img{
+    
+   }
     .main-container{
 
         position:relative;
@@ -27,7 +30,7 @@ body.blog-1{
             background: url("assets/img/habitat-droite.png");
             background-size: contain;
         }
-        .entry-content .wp-block-image.size-full{
+        .entry-content >.wp-block-image.size-full{
             width: 100%;
             min-width: 100%;
             >img{
@@ -178,3 +181,4 @@ body.blog-1{
         }
     }
 }
+
