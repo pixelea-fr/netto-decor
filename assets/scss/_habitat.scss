@@ -83,7 +83,7 @@ body.blog-1{
             height: 0;
             border-top: 0.5em solid transparent;
             border-bottom: 0.5em solid transparent;
-            border-left: 0.5em solid var(--wp--preset--color--custom-red);
+            border-left: 0.5em solid white;
             z-index:2;
         }
         &:after{
@@ -95,7 +95,7 @@ body.blog-1{
             width:1em;
             height: 1em;
             display: block;
-            background-color: pink;
+            background-color: var(--wp--preset--color--custom-red);
  
         }
     }
