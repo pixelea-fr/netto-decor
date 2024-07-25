@@ -138,11 +138,20 @@ body.blog-1{
  
         }
     }
+
     ul{
         list-style-type: square;
     }
-    input, textarea{
-        padding: .3em .5em !important; 
-        border-radius: .5rem !important;  
+    .wpcf7-form{
+        input, textarea{
+            padding: .3em .5em !important; 
+            border-radius: .5rem !important;  
+        }
+        p{
+            display: contents;
+        }
+        >div{
+            display: flex;
+        }
     }
 }
