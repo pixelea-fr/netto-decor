@@ -11,7 +11,7 @@ body.blog-2{
                 display: block;
                 position: absolute;
                 top: 0;
-                left: -276px;
+                left: -264px;
                 width: 286px;
                 height: 279px;
                 background: url("assets/img/hygiene-insectes.png");
@@ -20,13 +20,14 @@ body.blog-2{
                 background-repeat: no-repeat;
             }
             &:after{
+                content: "";
                 display: block;
                 position: absolute;
                 top: 0;
-                left: 0;
-                content: "";
-                width: 100%;
-                height: 100%;
+                right: -284px;
+
+                width: 286px;
+                height: 279px;
                 
                 background: url("assets/img/hygiene-rat_droit.png");
                 background-size: contain;
@@ -37,12 +38,13 @@ body.blog-2{
     .main-container{
 
         position:relative;
+        min-height: 100vh;
         &:before{
             display: block;
             position: absolute;
             top: 0;
             left: 0;
-            transform: translateX(-15%);
+            transform: translateX(-32%);
             content: "";
             width: 100%;
             height: 100%;
