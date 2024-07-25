@@ -72,7 +72,7 @@ body.blog-1{
     h3{
     font-weight: bold;
     position: relative;
-    padding-left: 3em;
+    padding-left: 2em;
         &:before{
             content: "";
             position: absolute;
@@ -81,9 +81,9 @@ body.blog-1{
             transform: translateY(-50%);
             width: 0;
             height: 0;
-            border-top: 0.5em solid transparent;
-            border-bottom: 0.5em solid transparent;
-            border-left: 0.5em solid white;
+            border-top: 0.4em solid transparent;
+            border-bottom: 0.4em solid transparent;
+            border-left: 0.4em solid white;
             z-index:2;
         }
         &:after{
@@ -96,6 +96,7 @@ body.blog-1{
             height: 1em;
             display: block;
             background-color: var(--wp--preset--color--custom-red);
+            border-radius:100%;
  
         }
     }
