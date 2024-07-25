@@ -57,7 +57,10 @@ body.blog-1{
             justify-content: stretch;
             width: 100%;
         }
-        .wp-block-pages-list__item__link,.wp-block-navigation__item__content{
+        .wp-block-navigation-item{
+            width: 100%;
+        }
+        .wp-block-pages-list__item__link,.wp-block-navigation-item__content{
             padding-left: 2rem;
             padding-top: 0.3rem;
             padding-bottom: 0.3rem;
