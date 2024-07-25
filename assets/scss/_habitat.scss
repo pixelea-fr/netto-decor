@@ -60,13 +60,13 @@ body.blog-1{
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateX(-50%);
+        transform: translateY(-50%);
         bottom: 0;
         width: 0;
         height: 0;
         border-top: 1rem solid transparent;
         border-bottom: 1rem solid transparent;
-        border-left: 1rem solid white;
+        border-left: 1rem solid var(--wp--preset--color--custom-blue);
       }
     }
     h3{
