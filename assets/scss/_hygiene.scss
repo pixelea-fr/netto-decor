@@ -1,4 +1,8 @@
 body.blog-2{
+    background: #006331 url("assets/img/fond.jpg") repeat-x top;
+
+    line-height: 160%;
+    overflow-x: hidden;
     .main-container{
 
         position:relative;
@@ -83,63 +87,30 @@ body.blog-2{
 
         }
     }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        line-height: normal;
+        margin: 10px 0;
     h1{
-        text-align: center;
+        color: #000;
+        font-size: 2.9em;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     h2{
-        position: relative;
-      background-color: var(--wp--preset--color--custom-fond-b); 
-      color:white;
-      padding-left: 2rem;
-      padding-top: 0.3rem;
-      padding-bottom: 0.3rem; 
-      &:before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-top: 1rem solid transparent;
-        border-bottom: 1rem solid transparent;
-        border-left: 1rem solid var(--wp--preset--color--custom-blue);
-      }
+        background: #55bf8b url("assets/img/h2.jpg") left no-repeat !important;
+        margin-top: 15px;
+        padding-left: 40px;
+        padding-top: 8px;
+        color: white;
+        height: 30px;
+        font-size: 20px;
     }
     h3{
     font-weight: bold;
     position: relative;
     padding-left: 2em;
-        &:before{
-            content: "";
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-top: 0.4em solid transparent;
-            border-bottom: 0.4em solid transparent;
-            border-left: 0.4em solid white;
-            z-index:2;
-        }
-        &:after{
-            content: "";
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform:translateY(-50%) translateX(-.35em);
-            width:1em;
-            height: 1em;
-            display: block;
-            background-color: var(--wp--preset--color--custom-red);
-            border-radius:100%;
- 
-        }
-    }
-    ul{
-        list-style-type: square;
-    }
+      }
 
+    }
 }
