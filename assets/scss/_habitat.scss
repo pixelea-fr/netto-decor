@@ -27,7 +27,7 @@ body.blog-1{
             background: url("assets/img/habitat-droite.png");
             background-size: contain;
         }
-        .wp-block-image.size-full{
+        .entry-content .wp-block-image.size-full{
             width: 100%;
             min-width: 100%;
             >img{
