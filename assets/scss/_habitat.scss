@@ -36,7 +36,7 @@ body.blog-1{
         }
         .wp-block-gallery .wp-block-image {
             img{
-                object-fit: contain;
+                object-fit: contain !important;
             }
         }
 
@@ -141,5 +141,8 @@ body.blog-1{
     ul{
         list-style-type: square;
     }
-
+    input, textarea{
+        padding: .3em .5em !important; 
+        border-radius: .5rem !important;  
+    }
 }
