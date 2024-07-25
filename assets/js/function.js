@@ -131,56 +131,6 @@
           }
       });
 
-          // Vérifiez si l'élément existe dans la page
-    if ($(".ti-widget-container").length > 0) {
-
-        // La classe que vous voulez maintenir
-        var classeVoulue = "ti-col-3";
-        
-        // Sélectionnez votre div
-        var $monDiv = $(".ti-widget-container");
-        
-        // Fonction pour vérifier et restaurer la classe
-        function verifierEtRestaurerClasse() {
-            if ($(window).width() > 980) {
-                if (!$monDiv.hasClass(classeVoulue)) {
-                    $($monDiv).removeClass(function(index, className) {
-                        return (className.match(/(^|\s)ti-col-\S+/g) || []).join(' ');
-                    });
-                    $monDiv.addClass(classeVoulue);
-                    console.log("Classe restaurée : " + classeVoulue);
-                }
-            }
-        }
-        
-        // Utilisez MutationObserver pour surveiller les changements de classe
-        var observateur = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === "attributes" && mutation.attributeName === "class") {
-                    verifierEtRestaurerClasse();
-                }
-            });
-        });
-        
-        // Configuration de l'observateur
-        var config = { attributes: true, attributeFilter: ["class"] };
-        
-        // Démarrez l'observation
-        observateur.observe($monDiv[0], config);
-        
-        // Vérifiez également périodiquement (au cas où)
-        setInterval(verifierEtRestaurerClasse, 1000);
-        
-        // Ajoutez un écouteur d'événement pour le redimensionnement de la fenêtre
-        $(window).resize(function() {
-            verifierEtRestaurerClasse();
-        });
-        
-        // Vérifiez immédiatement au chargement de la page
-        verifierEtRestaurerClasse();
-
-    }
-
     });
    
 })(jQuery);
