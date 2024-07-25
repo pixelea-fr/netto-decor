@@ -152,9 +152,19 @@ body.blog-1{
             border-width: 1px !important;
 
         }
+        input[type="submit"]{
+            font-size: 1.2rem;
+            padding: .5em 1em !important;
+            border-radius: .3rem !important;  
+            border: 1px solid var(--wp--preset--color--custom-blue) ;  
+            background:var(--wp--preset--color--custom-blue) ;  
+            color:white;
+            text-transform: uppercase;
+        }
         label{
             display: block;
-            margin-bottom: .5rem;
+            margin-bottom: .2rem;
+            margin-top: 0.3rem;
         }
         p{
             display: contents;
