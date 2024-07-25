@@ -1,0 +1,35 @@
+
+.hidden{
+    display: none;
+}
+
+
+
+@include m(782){
+    .columns-inverse{
+        flex-direction: column-reverse !important;
+    }
+
+    .wp-block-spacer{
+        height: 15px !important;
+    }
+}
+
+@include p(769){
+    .mobile{
+        display: none !important;
+    }
+}
+
+@include m(768){
+    .desktop{
+        display: none !important;
+    }
+}
+
+
+@include p(768){
+    .zoom { 
+        transform: scale(1.2);
+    }
+}

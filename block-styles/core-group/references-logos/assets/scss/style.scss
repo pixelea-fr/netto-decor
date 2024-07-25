@@ -1,0 +1,60 @@
+@import "mixins";
+
+ .wp-block-group{
+    &.is-style-references-logos{
+
+      .has-nested-images{
+         &.is-overflow{
+           &:after{
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              z-index: 1;
+           }
+         }
+         gap: 10px;
+         flex-direction: row;
+         flex: 1;
+
+         margin: 0;
+
+
+         align-items: center;
+
+         display: flex;
+         flex-wrap: nowrap;
+         white-space: nowrap;
+         overflow-x: hidden;
+         align-items : center;
+         justify-content: left;
+         .wp-block-image{
+            flex-shrink: 0;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;;
+            max-width: 330px;;
+            img {
+
+               max-height: 100px;
+               width: auto;
+               max-width: 80%;
+               border-radius: 0;
+               box-shadow: none;
+               object-fit: contain;
+               &:not(:last-child) {
+                  margin-right: 16px;
+               }
+            }
+         }
+         
+      }
+        
+    }
+}
+
+  

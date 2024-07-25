@@ -1,0 +1,60 @@
+@import "mixins";
+
+ .wp-block-group{
+    &.is-style-cols-image-rd-anim{
+        position: relative;
+
+    
+            figure.wp-block-image{
+                position: relative;
+                img{
+
+                    max-width: 35rem;
+                    height : auto;
+                    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+                    rotate: -2.5deg;
+                    position: relative;
+
+                }
+                &::after{
+                    content: "";
+                    width: 500px;
+                    height: 200px;
+                    position: absolute;
+                    background-image: url(./assets/img/vagues-bleues.png), url(./assets/img/vagues-jaunes.png);
+                    background-repeat: no-repeat;
+                    background-position: calc( 100% -  40px) bottom, right calc(100% - 90px);
+                    background-size: auto;
+                    bottom: -100px;
+                    right: 0;
+                    z-index:-1;
+                }
+                &::before{
+                    content: '';
+                    height: 11rem;
+                    width: 11rem;
+                    border-radius: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+    
+                    transform: translate(0, -50%);
+                    background-color: var(--wp--preset--color--second-300) !important;
+                    transition: left 2s ease-in-out, transform 2s ease-in-out;
+                    z-index: 0;
+                }
+            }
+        
+        &:hover   figure.wp-block-image::before{
+            left: 100%;
+            transform: translate(-100%, -50%);
+        }
+    
+        &:not(:hover)  figure.wp-block-image::before{
+            left: -70px;
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+  

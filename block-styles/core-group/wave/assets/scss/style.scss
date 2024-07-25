@@ -1,0 +1,75 @@
+.wp-block-group.is-style-wave {
+    margin-top: -300px;
+    z-index: 100;
+    position: relative;
+background-repeat: repeat !important;
+
+background-size: 180px 30px !important;
+background-position: top center;
+animation: bgMoveRight 100s linear infinite;
+background: transparent !important;
+overflow :hidden;
+
+    @keyframes bgMoveRight {
+        0% {
+           background-position: 0;
+            //opacity:.5;
+        }
+        50%{
+            //opacity:1;
+        }
+        100% {
+            //opacity:.5;
+            left: 100%; /* Fin à droite de l'élément parent */
+            background-position: 100vw;
+        }
+    }
+  }
+  // best seen at 1500px or less
+
+
+
+.ocean { 
+    opacity: .3;
+ height: 0;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+    opacity: .3;
+  background: url(assets/img/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 16400px;
+  height: 200px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: .4;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}

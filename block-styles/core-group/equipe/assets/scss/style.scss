@@ -1,0 +1,104 @@
+@import "mixins";
+
+.wp-block-group.is-style-equipe {
+    position: relative;
+    >.wp-block-columns{
+        > .wp-block-column{
+            > .wp-block-group{
+                position: relative;
+                display: block;
+                min-height: 580px;
+                cursor: pointer;
+                transition: margin-top 0.5s ease;
+                &:hover, &.active{
+                    > .wp-block-group{
+                        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+                        > .wp-block-image{
+                            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+                        }
+                    }
+                }
+  
+                &.active{
+                    > .wp-block-group{
+                    >.wp-block-group:nth-child(3){
+            
+                        height: auto;
+                        opacity: 1;
+                        display: block;
+                        overflow: hidden;
+                        }
+                    }
+                }
+                > .wp-block-group{
+                    position: relative;
+  
+  
+                    width: 350px;
+                    height: 350px;
+                    background-color: var(--wp--preset--color--second-300) !important; /* Couleur de fond (jaune) */
+                    border-radius: 50%;  /* Rend le conteneur circulaire */
+                    transition: all 0.3s ease;
+
+                    > .wp-block-image{
+                        margin: 30px auto;
+                        transition: all 0.3s ease;
+                        display: flex;
+          
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        left: -12px;
+    
+
+                        width: 380px !important;
+                        height: 380px;
+                        img {
+
+                        }
+                        
+                    }
+                     >.wp-block-group:nth-child(2){
+      
+                    }
+                    >.wp-block-group:nth-child(3){
+                        transition: all 0.5s ease;
+                        height: 0px;
+                        opacity:0;
+                        display: block;
+                        overflow: hidden;
+                        width: 80%;
+                        @include p(550){
+                            width: 410px;
+                        }
+                        text-align: center;
+                        margin: auto;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            @include m(1024){
+                flex-basis: 100% !important;
+                flex-grow: 1;
+                min-width: 0;
+                overflow-wrap: break-word;
+                word-break: break-word;
+            }
+            @include p(1024){
+            &:nth-child(2){
+                position: relative;
+                top: 250px;
+            }
+            }
+        }
+        @include m(1024){
+            flex-wrap: wrap !important;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+     }
+  }

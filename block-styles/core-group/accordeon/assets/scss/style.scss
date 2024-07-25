@@ -1,0 +1,48 @@
+body:not(.block-editor-iframe__body) {
+    .wp-block-group.is-style-accordeon {
+        details.wp-block-details {
+            border-bottom: 1px solid var(--wp--custom--color--casablanca-300);
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            max-height: 5rem; // Ajustez cette valeur en fonction de la hauteur du résumé
+
+            &[open] {
+                max-height: none; // Permet l'ajustement automatique en fonction du contenu
+                summary {
+                    &::before {
+                        transform: rotate(45deg); /* 25% d'un tour complet */
+                    }
+                }
+            }
+
+            summary {
+                cursor: pointer;
+                
+                padding-bottom: 1.5rem;
+                font-family: Recoleta;
+                font-size: 65px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 65px; /* 100% */
+                transition: background 0.3s ease-in-out;
+                position: relative;
+                list-style: none;
+                &::marker{
+                    display: none !important;
+                }
+                &::before {
+                    content :"+";
+                    color: var(--wp--custom--color--casablanca-300);
+                    font-size: 5rem;
+                    right: 0;
+                    position: absolute;
+                    transition: transform 0.3s ease-in-out;
+      
+                }
+   
+            }
+        }
+    }
+}
