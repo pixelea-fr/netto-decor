@@ -11,7 +11,7 @@ body.blog-1{
             width: 300px;
             height: 400px;
             
-            background: url("assets/img/habitat-droite.png");
+            background: url("assets/img/habitat-gauche.png");
             background-size: contain;
         }
         &:after{
@@ -31,10 +31,23 @@ body.blog-1{
     .wp-block-navigation__container.is-vertical{
         .wp-block-pages-list__item__link{
             padding-left: 2rem;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-            background: #008AD5;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            background: #e2e4e5;
+            width: 100%;
 
         }
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+      background-color: var(--wp--preset--color--custom-fond-b); 
+      padding-left: 2rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem; 
+    }
+    ul{
+        list-style-type: square;
     }
 }
