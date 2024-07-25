@@ -84,6 +84,19 @@ body.blog-1{
             border-top: 0.5rem solid transparent;
             border-bottom: 0.5rem solid transparent;
             border-left: 0.5rem solid var(--wp--preset--color--custom-red);
+            z-index:2;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width:1em;
+            height: 1em;
+            display: block;
+            background-color: pink;
+ 
         }
     }
     ul{
