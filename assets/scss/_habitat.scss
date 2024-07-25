@@ -34,7 +34,7 @@ body.blog-1{
                 width: 100%;
             }
         }
-        .wp-block-gallery{
+        .wp-block-gallery .wp-block-image {
             img{
                 object-fit: contain;
             }
