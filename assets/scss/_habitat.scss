@@ -83,9 +83,7 @@ body.blog-1{
 
         }
     }
-    h1{
-        text-align: center;
-    }
+
     h2{
         position: relative;
       background-color: var(--wp--preset--color--custom-fond-b); 
@@ -153,13 +151,18 @@ body.blog-1{
 
         }
         input[type="submit"]{
-            font-size: 1.2rem;
-            padding: .5em 1em !important;
+            font-size: 1rem;
+            padding: .3em 1em !important;
             border-radius: .3rem !important;  
             border: 1px solid var(--wp--preset--color--custom-blue) ;  
             background:var(--wp--preset--color--custom-blue) ;  
             color:white;
             text-transform: uppercase;
+            transition: all .5s;
+            &:hover{
+                background: white;
+                color: var(--wp--preset--color--custom-blue) ;  
+            }
         }
         label{
             display: block;
