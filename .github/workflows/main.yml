@@ -24,6 +24,17 @@ jobs:
         echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
         cat ~/.ssh/known_hosts  # For debugging purposes
 
+    - name: Install Node.js and sass on server
+      run: |
+        ssh -o StrictHostKeyChecking=no netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr << 'EOF'
+          sudo apt update
+          sudo apt install -y nodejs npm
+          sudo npm install -g sass
+          sass --version
+        EOF
+      env:
+        SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+
     - name: Sync files to Plesk
       run: |
         rsync -avz --delete --exclude '.git/' ./ netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr:/var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/netto-decor
@@ -33,7 +44,9 @@ jobs:
     - name: Run deploy script on server
       run: |
         ssh -o StrictHostKeyChecking=no netto-decor-habitat.p_rto3hj8h1u@netto-decor-habitat.pixelea.fr << 'EOF'
+          set -e  # Exit immediately if a command exits with a non-zero status
           bash /var/www/vhosts/netto-decor-habitat.pixelea.fr/httpdocs/wp-content/themes/netto-decor/.deploy/deploy.sh
+          echo "Deploy script executed successfully."
         EOF
       env:
         SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
