@@ -46,8 +46,8 @@ body.blog-2{
             left: 0;
             transform: translateX(-32%);
             content: "";
-            width: 100%;
-            height: 100%;
+
+            height: 787px;
             
             background: url("assets/img/hygiene-gauche.png");
             background-size: contain;
@@ -148,6 +148,16 @@ body.blog-2{
         padding-left: 2em;
         color: #a1a1a1;
         font-size: 1.6em;
+      }
+      h6{
+        background: url("assets/img/h6.jpg") left no-repeat !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 40px;
+        padding-top: 8px;
+        height: 30px;
+        font-size: 16px;
+        color: #55bf8b;
       }
       ul {
         color: black;
