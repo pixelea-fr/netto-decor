@@ -29,6 +29,13 @@ body.blog-1{
 
     }
     .wp-block-navigation__container.is-vertical{
+        margin-top: 2rem;
+        position:sticky;
+        top:100px;
+        .wp-block-pages-list__item{
+            justify-content: stretch;
+            width: 100%;
+        }
         .wp-block-pages-list__item__link{
             padding-left: 2rem;
             padding-top: 0.3rem;
@@ -43,11 +50,15 @@ body.blog-1{
     }
     h2{
       background-color: var(--wp--preset--color--custom-fond-b); 
+      color:white;
       padding-left: 2rem;
       padding-top: 0.3rem;
       padding-bottom: 0.3rem; 
     }
     ul{
         list-style-type: square;
+    }
+    .wp-block-image.size-full{
+        min-width: 100%s;
     }
 }
