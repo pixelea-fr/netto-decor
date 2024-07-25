@@ -1,6 +1,11 @@
 body.blog-1{
-   .is-style-list-logo img{
-    
+   .is-style-list-logo a{
+    transition: all .5s;
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
    }
     .main-container{
 
@@ -52,7 +57,7 @@ body.blog-1{
             justify-content: stretch;
             width: 100%;
         }
-        .wp-block-pages-list__item__link{
+        .wp-block-pages-list__item__link,.wp-block-navigation__item__content{
             padding-left: 2rem;
             padding-top: 0.3rem;
             padding-bottom: 0.3rem;
