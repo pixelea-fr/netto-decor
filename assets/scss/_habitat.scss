@@ -27,7 +27,7 @@ body.blog-1{
                 width: 100%;
                 @include m(960){
                     &:last-of-type{
-                        width: calc(100% - 270px);
+                        width: 100%;
                   
                     }
                 }
@@ -37,37 +37,39 @@ body.blog-1{
                         
                     }
                     &:last-of-type{
-                        width: calc(100% - 270px);
+                        width: calc(100% - 280px);
                   
                     }
                 }
             }
      
-        &:before{
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateX(-100%);
-            content: "";
-            width: 300px;
-            height: 400px;
-            
-            background: url("assets/img/habitat-gauche.png");
-            background-size: contain;
-        }
-        &:after{
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: translateX(100%);
-            content: "";
-            width: 300px;
-            height: 400px;
-            background: url("assets/img/habitat-droite.png");
-            background-size: contain;
-        }
+@include p(1200){
+         &:before{
+             display: block;
+             position: absolute;
+             top: 0;
+             left: 0;
+             transform: translateX(-100%);
+             content: "";
+             width: 300px;
+             height: 400px;
+             
+             background: url("assets/img/habitat-gauche.png");
+             background-size: contain;
+         }
+         &:after{
+             display: block;
+             position: absolute;
+             top: 0;
+             right: 0;
+             transform: translateX(100%);
+             content: "";
+             width: 300px;
+             height: 400px;
+             background: url("assets/img/habitat-droite.png");
+             background-size: contain;
+         }
+}
         .entry-content >.wp-block-image.size-full{
             width: 100%;
             min-width: 100%;
