@@ -162,14 +162,16 @@ body.blog-2{
         font-size: 2.9em;
         text-transform: uppercase;
         font-weight: bold;
+        word-wrap: break-word;
     }
     h2{
         background: #55bf8b url("assets/img/h2.jpg") left no-repeat !important;
         margin-top: 15px;
         padding-left: 40px;
         padding-top: 8px;
+        padding-bottom: 8px;
         color: white;
-        height: 30px;
+        height: auto;
         font-size: 20px;
     }
     h3{
@@ -183,7 +185,8 @@ body.blog-2{
         margin-bottom: 5px;
         padding-left: 40px;
         padding-top: 8px;
-        height: 30px;
+        padding-bottom: 8px;
+        height: auto;
         font-size: 16px;
         color: #55bf8b;
       }
