@@ -1,0 +1,10 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "title": "Slider",
+    "slug": "slick",
+    "blockTypes": [ "core/group","core/gallery"],
+    "styles": {
+        "css": "background: black;"
+    }
+}
