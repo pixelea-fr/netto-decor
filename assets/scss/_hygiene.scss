@@ -1,4 +1,5 @@
 
+
 body.blog-2{
     background: #006331 url("assets/img/fond.jpg") repeat-x top;
 
@@ -181,33 +182,6 @@ body.blog-2{
         text-transform: uppercase;
         font-weight: bold;
         word-wrap: break-word;
-        .page-deratisation & {
-            background: #d3c100 url("assets/img/hygiene-picto-menu_rat.gif")  top left no-repeat !important;
-            padding-left: 70px;
-            font-size: 31px;
-        }
-        .page-desinsectisation & {
-            background: #cca000 url("assets/img/hygiene-picto-menu_desinsectisation.gif")  top left no-repeat !important;
-            padding-left: 70px;
-            font-size: 31px;
-        }
-        .page-desinfection & {
-            background: #cca000 url("assets/img/hygiene-picto-menu_desinfection.gif")  top left no-repeat !important;
-            padding-left: 70px;
-            font-size: 31px;
-        }
-        .page-environnement & {
-            background: #abb000 url("assets/img/hygiene-picto-menu_environnement.gif")  top left no-repeat !important;
-            padding-left: 70px;
-            font-size: 31px;
-        }
-        .page-guepes-frelons & {
-            background: #fc0505 url("assets/img/hygiene-picto-menu_guepes.gif")  top left no-repeat !important;
-            color: #ffed00;
-            padding-left: 70px;
-            font-size: 31px;
-        }
-    
     }
     h2{
         background: #55bf8b url("assets/img/h2.jpg") left no-repeat !important;
@@ -503,5 +477,39 @@ body.blog-2{
   input[type="checkbox"] {
     margin-right: 10px;
   }
+
+}
+h1{
+    color: #000;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-wrap: break-word;
+    .page-deratisation.blog-2 & {
+        background: #d3c100 url("assets/img/hygiene-picto-menu_rat.gif")  top left no-repeat !important;
+        padding-left: 70px;
+        font-size: 31px;
+    }
+    .page-desinsectisation.blog-2 & {
+        background: #cca000 url("assets/img/hygiene-picto-menu_desinsectisation.gif")  top left no-repeat !important;
+        padding-left: 70px;
+        font-size: 31px;
+    }
+    .page-desinfection.blog-2 & {
+        background: #cca000 url("assets/img/hygiene-picto-menu_desinfection.gif")  top left no-repeat !important;
+        padding-left: 70px;
+        font-size: 31px;
+    }
+    .page-environnement.blog-2 & {
+        background: #abb000 url("assets/img/hygiene-picto-menu_environnement.gif")  top left no-repeat !important;
+        padding-left: 70px;
+        font-size: 31px;
+    }
+    .page-guepes-frelons.blog-2 & {
+        background: #fc0505 url("assets/img/hygiene-picto-menu_guepes.gif")  top left no-repeat !important;
+        color: #ffed00;
+        padding-left: 70px;
+        font-size: 31px;
+    }
 
 }
