@@ -36,23 +36,40 @@ body.blog-2{
         }
     }
     .main-container{
+        @include p(768){
 
+
+
+
+        }
+        @include p(768){
+            > .wp-block-group:first-child{
+                width : 20%;
+                max-width: 230px;
+            }
+            > .wp-block-group:last-child{
+                width: 80%;
+            }
+        }
+
+        
         position:relative;
-        min-height: 100vh;
+
         &:before{
             display: block;
             position: absolute;
             top: 0;
             left: 0;
-            transform: translateX(-32%);
-            content: "";
+  
 
-            height: 787px;
-            
+            transform: translateX(-46%);
+            content: "";
+            height: 1100px;
             background: url("assets/img/hygiene-gauche.png");
             background-size: contain;
             background-repeat: no-repeat;
             opacity: 0.3;
+            z-index: -1;
         }
         &:after{
             display: block;
@@ -67,6 +84,7 @@ body.blog-2{
             background-size: contain;
             background-repeat: no-repeat;
             opacity: 0.3;
+            z-index: -1;
         }
         .entry-content .wp-block-image.size-full{
             width: 100%;
@@ -124,6 +142,10 @@ body.blog-2{
 
         }
     }
+    .wp-block-template-part footer{
+        margin-block-start: 0px;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         line-height: normal;
