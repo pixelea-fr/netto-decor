@@ -181,27 +181,27 @@ body.blog-2{
         text-transform: uppercase;
         font-weight: bold;
         word-wrap: break-word;
-        .page-deratisation & {
+        & .page-deratisation & {
             background: #d3c100 url("assets/img/hygiene-picto-menu_rat.gif")  top left no-repeat !important;
             padding-left: 70px;
             font-size: 31px;
         }
-        .page-desinsectisation & {
+       & .page-desinsectisation & {
             background: #cca000 url("assets/img/hygiene-picto-menu_desinsectisation.gif")  top left no-repeat !important;
             padding-left: 70px;
             font-size: 31px;
         }
-        .page-desinfection & {
+       & .page-desinfection & {
             background: #cca000 url("assets/img/hygiene-picto-menu_desinfection.gif")  top left no-repeat !important;
             padding-left: 70px;
             font-size: 31px;
         }
-        .page-environnement & {
+       & .page-environnement & {
             background: #abb000 url("assets/img/hygiene-picto-menu_environnement.gif")  top left no-repeat !important;
             padding-left: 70px;
             font-size: 31px;
         }
-        .page-guepes-frelons & {
+       & .page-guepes-frelons & {
             background: #fc0505 url("assets/img/hygiene-picto-menu_guepes.gif")  top left no-repeat !important;
             color: #ffed00;
             padding-left: 70px;
