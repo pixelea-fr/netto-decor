@@ -36,7 +36,7 @@ body.blog-2{
         }
     }
     .main-container{
-        @include m(768){
+        @include m(599){
             gap: 0;
 
             > .wp-block-group:first-child{
@@ -47,7 +47,7 @@ body.blog-2{
             }
 
         }
-        @include p(768){
+        @include p(600){
             > .wp-block-group:first-child{
                 width : 20%;
                 max-width: 230px;
