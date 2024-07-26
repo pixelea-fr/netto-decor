@@ -226,12 +226,19 @@ body.blog-1{
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        label{
+            font-weight: bold;
+        }
         input, textarea{
             font-size: 1rem;
             padding: .6em 1em !important; 
             border-radius: .3rem !important;  
             border-width: 1px !important;
             max-width: 300px;
+            &[name="autres"]{
+                width: 100%;
+                max-width: 100%;
+            }
 
         }
         input[type="submit"]{
@@ -259,8 +266,14 @@ body.blog-1{
         >div{
             gap: 1rem;
             display: flex;
+            flex-wrap: wrap;
             max-width: 678px;
             justify-content: space-between;
+
+            @include m(960){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
         .wpcf7-list-item{
             margin: 0;
