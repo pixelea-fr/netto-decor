@@ -1,3 +1,4 @@
+
 body.blog-2{
     background: #006331 url("assets/img/fond.jpg") repeat-x top;
 
@@ -195,4 +196,137 @@ body.blog-2{
         list-style: none;
         margin: 5px 0 5px 25px;
     }
+
+    ///////////
+    /// 
+    /// @import "mixins";
+    /// 
+
+
+ .wp-block-navigation{
+    &.is-style-header-nav{
+        .wp-block-navigation__container{
+            li.current-menu-item{
+                a{
+                    color:#006331!important;
+                }
+            }
+        }
+
+            @include m(768){
+                height: 50px;
+            }
+            @include p(769){
+                width: 100%;
+            }
+            
+            .wp-block-navigation__responsive-container-content{
+                justify-content: center;
+                @include m(768){
+                    height: 100%;;
+                    width: 100%;
+                    justify-content: flex-start;
+                    padding-top: 18%;
+                }
+                html.has-modal-open &{
+                    position: relative;
+                }
+                .wp-block-navigation__container{
+                    
+                    height: auto;
+                
+                    width: 100%;
+           
+                }
+                .wp-block-buttons{
+           
+                    display: none;
+                    @include m(767){
+                        display: flex;
+                    }
+                    @include p(1024){
+                        width: 225px; 
+                        display: flex;
+                    }
+                }
+            }
+
+         //    
+    
+
+        .wp-block-navigation__responsive-container{
+                @include m(768){
+                    display: none !important;
+                    &.has-modal-open.is-menu-open{
+                        display: block !important;
+                    }
+                    background-color: #fff !important;
+                    height: 100vh;;
+                }
+
+                display: none;
+                @media (min-width: 768px){
+                    display: flex !important;
+                }
+            &.has-modal-open.is-menu-open{
+                display: flex ;
+                
+                .wp-block-navigation__container{
+                    align-items: center;
+                    padding-left: 0px !important;
+                }
+            }
+        }
+        .wp-block-navigation__responsive-close{
+            height: 100%;;
+            .wp-block-navigation__responsive-dialog{
+                height: 100%;;
+            }
+        }
+        .wp-block-navigation__responsive-container-close{
+            
+            padding: 10px;
+            border-radius: 50%;
+            svg{
+                fill: #006331 ;
+                width: 28px;
+                height: 28px;;
+            }
+
+        }
+        .wp-block-navigation__responsive-container-open{
+            display: flex !important;
+            width: 55px;
+            height: 30px;
+            z-index: 2;
+            @media (min-width: 768px){
+                display: none !important;
+            }
+
+            .burger-icon{
+             
+                width: 55px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                span {
+                    background-color: ;
+                    height: 2px;
+                    width: 100%;;
+                    display: inline-block;
+                    margin-top: 6px;
+    
+                }
+                span:first-child, span:last-child{
+                    width: 80%;;
+                }
+            }
+        }
+    
+
+    }
+}
+
+  
+
 }
