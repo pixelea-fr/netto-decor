@@ -5,6 +5,8 @@ body.blog-2{
     line-height: 160%;
     overflow-x: hidden;
     .wp-block-group.header{
+        background: linear-gradient(to bottom, #fff 90%, #00633117 10%);
+        height: 100%;
         figure.wp-block-image{
             position: relative;
             &:before{
@@ -213,10 +215,10 @@ body.blog-2{
             }
         }
 
-            @include m(768){
+            @include m(599){
                 height: 50px;
             }
-            @include p(769){
+            @include p(600){
                 width: 100%;
             }
             
