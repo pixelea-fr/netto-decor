@@ -73,7 +73,7 @@ body.blog-2{
             figcaption{
                 text-align: center;
             }
-             .wp-block-jetpack-slideshow_pagination .swiper-pagination-bullets{
+             .wp-block-jetpack-slideshow_pagination {
                 justify-content: center;
             }
         }
@@ -243,6 +243,15 @@ body.blog-2{
         margin: 5px 0 5px 25px;
     }
 
+    hr{
+        border: none;
+        border-top: 2px dashed #000; // Utilise la couleur verte du thème
+        color: transparent;
+        background-color: transparent;
+        height: 1px;
+        width: 100%;
+        margin: 20px 0;
+    }
     ///////////
     /// 
     /// @import "mixins";
