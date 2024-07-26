@@ -36,9 +36,9 @@ body.blog-2{
         }
     }
     .main-container{
-        @include p(768){
-
-
+        @include m(768){
+            gap: 0;
+            max-width: 100%;
 
 
         }
