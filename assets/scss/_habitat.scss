@@ -16,7 +16,7 @@ body.blog-1{
             display:flex;
             flex-direction: row;
             flex-wrap: wrap;
-            @include m(768){
+            @include m(960){
                 flex-direction: column;
                 flex-direction: column-reverse;
                 justify-content: center;
@@ -25,16 +25,20 @@ body.blog-1{
             }
             >div{
                 width: 100%;
-                @include p(768){
+                @include m(960){
+                    &:last-of-type{
+                        width: calc(100% - 270px);
+                  
+                    }
+                }
+                @include p(961){
                     &:first-of-type{
                         width: 250px;
                         
                     }
                     &:last-of-type{
                         width: calc(100% - 270px);
-                        @include m(768){
-                            display: none;
-                        }
+                  
                     }
                 }
             }
