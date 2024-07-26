@@ -399,81 +399,94 @@ body.blog-2{
     
 }
 
-  // Variables
+// Variables
 $form-max-width: 800px;
-$grid-gap: 10px;
-$input-padding: 5px;
-$label-padding-right: 10px;
+$label-width: 30%;
+$input-width: 70%;
+$spacing: 10px;
+$primary-color: #006331; // Couleur verte du header
 
-// Mixins
-@mixin full-width {
-  width: 100%;
-}
-
-@mixin grid-column($start, $end: $start) {
-  grid-column: #{$start} / #{$end};
-}
-
-// Styles
 .wpcf7-form {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: $grid-gap;
   max-width: $form-max-width;
   margin: 0 auto;
+  font-family: Arial, sans-serif;
 
   p {
-    display: contents;
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing;
   }
 
   label {
-    @include grid-column(1);
+    width: $label-width;
+    padding-right: $spacing;
     text-align: right;
-    padding-right: $label-padding-right;
+    font-weight: bold;
   }
 
   .wpcf7-form-control-wrap {
-    @include grid-column(2);
+    width: $input-width;
   }
 
   input[type="text"],
   input[type="email"],
   textarea {
-    @include full-width;
-    padding: $input-padding;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
   }
 
-  // Style pour les cases à cocher
+  textarea {
+    height: 100px;
+  }
+
+  // Ajustement pour les cases à cocher
   .wpcf7-checkbox {
     display: flex;
     flex-direction: column;
-  }
+    align-items: flex-start;
 
-  // Style pour le bouton d'envoi
-  input[type="submit"] {
-    @include grid-column(2);
-    justify-self: start;
-    margin-top: $grid-gap;
+    .wpcf7-list-item {
+      margin-left: 0;
+    }
   }
 
   // Style pour le message (facultatif)
   p:has(textarea) {
-    @include grid-column(1, -1);
+    align-items: flex-start;
 
     label {
-      text-align: left;
+      padding-top: 5px;
     }
   }
 
-  // Style pour la case RGPD
-  p:has([name="rgpd[]"]) {
-    @include grid-column(1, -1);
-  }
+  // Style pour le bouton d'envoi
+  input[type="submit"] {
+    margin-left: $label-width;
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
 
-  // Style pour le texte de la politique de confidentialité
-  p:nth-last-child(3) {
-    @include grid-column(1, -1);
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
   }
+}
+
+// Style pour le header du formulaire
+.form-header {
+  background-color: $primary-color;
+  color: white;
+  padding: 15px;
+  margin-bottom: $spacing * 2;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
 }
 
 
