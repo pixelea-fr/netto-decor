@@ -39,6 +39,15 @@ body.blog-2{
         }
     }
     .main-container{
+
+        .wp-block-jetpack-slideshow {
+            figcaption{
+                text-align: center;
+            }
+             .wp-block-jetpack-slideshow_pagination.swiper-pagination-bullets{
+                justify-content: center;
+            }
+        }
         @include m(599){
             gap: 0;
             flex-wrap: wrap;
