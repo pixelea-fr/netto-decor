@@ -1,6 +1,6 @@
 body.blog-1{
     .wp-block-navigation__responsive-container-open{
-       
+        z-index: 20;
 
         .burger-icon{
             position: fixed;
@@ -8,11 +8,14 @@ body.blog-1{
             left: 0;
             background: white;
             border-radius: .5em;
-            width: 3rem;
-            height: 3rem;
+            width: 3em;
+            height: 3em;
             display: flex;
-            justify-content: center;
-            padding:4em;
+            flex-direction: column;
+           align-items: center;
+           justify-content: center;
+            padding:.6em;
+            gap: .8em;
             cursor: pointer;
         
             span {
