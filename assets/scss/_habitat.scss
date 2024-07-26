@@ -15,13 +15,17 @@ body.blog-1{
      
             display:flex;
             flex-direction: row;
+            flex-wrap: wrap;
             >div{
-                &:first-of-type{
-                    width: 250px;
-                    
-                }
-                &:last-of-type{
-                    width: calc(100% - 270px);
+                width: 100%;
+                @include p(768){
+                    &:first-of-type{
+                        width: 250px;
+                        
+                    }
+                    &:last-of-type{
+                        width: calc(100% - 270px);
+                    }
                 }
             }
      
