@@ -266,8 +266,8 @@ body.blog-2{
                     height: 100vh;;
                 }
 
-                display: none;
-                @media (min-width: 768px){
+
+                @media (min-width: 600px){
                     display: flex !important;
                 }
             &.has-modal-open.is-menu-open{
