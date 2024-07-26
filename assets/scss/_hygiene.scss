@@ -398,8 +398,7 @@ body.blog-2{
 
     
 }
-
-// Variables
+// Variables 
 $form-max-width: 800px;
 $label-width: 30%;
 $input-width: 70%;
@@ -413,7 +412,7 @@ $primary-color: #006331; // Couleur verte du header
 
   p {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     margin-bottom: $spacing;
   }
 
@@ -454,10 +453,19 @@ $primary-color: #006331; // Couleur verte du header
 
   // Style pour le message (facultatif)
   p:has(textarea) {
-    align-items: flex-start;
-
     label {
+      align-self: flex-start;
       padding-top: 5px;
+    }
+  }
+
+  // Style pour les cases à cocher
+  p:has(.wpcf7-checkbox) {
+    flex-direction: column;
+    
+    .wpcf7-form-control-wrap {
+      width: 100%;
+      margin-left: $label-width;
     }
   }
 
@@ -476,9 +484,16 @@ $primary-color: #006331; // Couleur verte du header
       background-color: darken($primary-color, 10%);
     }
   }
+
+  // Style pour le message de politique de confidentialité
+  p:nth-last-child(3),
+  p:nth-last-child(2) {
+    margin-left: $label-width;
+    font-size: 0.9em;
+  }
 }
 
-// Style pour le header du formulaire
+// Style pour le header du formulaire (à ajouter avant le formulaire)
 .form-header {
   background-color: $primary-color;
   color: white;
@@ -488,6 +503,5 @@ $primary-color: #006331; // Couleur verte du header
   font-weight: bold;
   text-align: center;
 }
-
 
 }
