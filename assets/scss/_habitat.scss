@@ -1,4 +1,7 @@
 body.blog-1{
+    .max-100{
+        max-width: 100% !important; 
+     }
    .is-style-list-logo a{
     transition: all .5s;
     &:hover{
