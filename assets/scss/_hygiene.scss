@@ -248,10 +248,10 @@ body.blog-2{
                     color: #ffffff;
                 }
                 &.menu-rat{
-                    background: url("assets/img/hygiene-picto-menu_rat.gif") no-repeat scroll 0 0 #d3c100;
+                    background: url("assets/img/hygiene-picto-menu_rat.gif") no-repeat scroll 0 0 #d3c100  !important;
     
                     a{
-                        color: #000;
+                        color: #000 !important;
                     }
                 }
                 &.menu-insect{
