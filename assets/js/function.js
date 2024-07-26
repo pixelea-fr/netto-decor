@@ -132,9 +132,40 @@
       });
 
     });
-   
+    $(document).ready(function($) {
+        function initializeSlickSliders() {
+            // Sélectionner tous les éléments avec la classe 'is-style-slick'
+            $('.is-style-slick').each(function() {
+                // Ajouter la classe 'slick' à l'élément
+                $(this).addClass('slick');
+    
+                // Vérifier si l'élément a un ID
+                if (this.id) {
+                    // Initialiser Slick slider sur cet élément
+                    $('#' + this.id).slick({
+                        // Options de Slick slider
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        adaptiveHeight: true
+                        // Ajoutez d'autres options selon vos besoins
+                    });
+                }else{
+                    $(".slick").slick({
+                        // Options de Slick slider
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        adaptiveHeight: true
+                        // Ajoutez d'autres options selon vos besoins
+                    });
+                }
+            });
+        }
+    
+        // Exécuter la fonction
+        initializeSlickSliders();
+    });
 })(jQuery);
-
-
-
-
