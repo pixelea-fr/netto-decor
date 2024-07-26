@@ -4,18 +4,19 @@ body.blog-1{
 
         .burger-icon{
             position: fixed;
-            top: 0;
-            left: 0;
-            background: white;
+            top: .5em;
+            left: .5em;
+            background: rgba(255, 255, 255, .4);
+            backdrop-filter: blur(3px);
             border-radius: .5em;
             width: 3em;
             height: 3em;
             display: flex;
             flex-direction: column;
-           align-items: center;
-           justify-content: center;
-            padding:.6em;
-            gap: .8em;
+            align-items: baseline;
+            justify-content: center;
+            padding:.2em;
+            gap: .5em;
             cursor: pointer;
         
             span {
@@ -23,6 +24,7 @@ body.blog-1{
                 background-color: var(--wp--preset--color--custom-anthracite);
                 height: 2px;
                 display: inline-block;
+                width: 100%;
 
             }
             span:first-child, span:last-child{
@@ -47,6 +49,7 @@ body.blog-1{
             display:flex;
             flex-direction: row;
             flex-wrap: wrap;
+            position:relative;
             @include m(960){
                 flex-direction: column;
                 flex-direction: column-reverse;
@@ -54,6 +57,33 @@ body.blog-1{
                 align-items: center;
              
             }
+            @include p(1200){
+                &:before{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translateX(-100%);
+                    content: "";
+                    width: 300px;
+                    height: 400px;
+                    
+                    background: url("assets/img/habitat-gauche.png");
+                    background-size: contain;
+                }
+                &:after{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translateX(100%);
+                    content: "";
+                    width: 300px;
+                    height: 400px;
+                    background: url("assets/img/habitat-droite.png");
+                    background-size: contain;
+                }
+       }
             >div{
                 width: 100%;
                 @include m(960){
@@ -74,33 +104,7 @@ body.blog-1{
                 }
             }
      
-@include p(1200){
-         &:before{
-             display: block;
-             position: absolute;
-             top: 0;
-             left: 0;
-             transform: translateX(-100%);
-             content: "";
-             width: 300px;
-             height: 400px;
-             
-             background: url("assets/img/habitat-gauche.png");
-             background-size: contain;
-         }
-         &:after{
-             display: block;
-             position: absolute;
-             top: 0;
-             right: 0;
-             transform: translateX(100%);
-             content: "";
-             width: 300px;
-             height: 400px;
-             background: url("assets/img/habitat-droite.png");
-             background-size: contain;
-         }
-}
+
         .entry-content >.wp-block-image.size-full{
             width: 100%;
             min-width: 100%;
@@ -223,9 +227,11 @@ body.blog-1{
         flex-direction: column;
         gap: 1rem;
         input, textarea{
-            padding: .3em .5em !important; 
+            font-size: 1rem;
+            padding: .6em 1em !important; 
             border-radius: .3rem !important;  
             border-width: 1px !important;
+            max-width: 300px;
 
         }
         input[type="submit"]{
@@ -253,6 +259,11 @@ body.blog-1{
         >div{
             gap: 1rem;
             display: flex;
+            max-width: 678px;
+            justify-content: space-between;
+        }
+        .wpcf7-list-item{
+            margin: 0;
         }
     }
     .is-style-slick{
@@ -315,4 +326,20 @@ body.blog-1{
     }
 }
 }
+
+.iframe-response__container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 pour la vidéo, ajustez si nécessaire */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .iframe-response__container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
