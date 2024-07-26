@@ -224,7 +224,7 @@ body.blog-2{
             
             .wp-block-navigation__responsive-container-content{
                 justify-content: center;
-                @include m(768){
+                @include m(599){
                     height: 100%;;
                     width: 100%;
                     justify-content: flex-start;
@@ -243,7 +243,7 @@ body.blog-2{
                 .wp-block-buttons{
            
                     display: none;
-                    @include m(767){
+                    @include m(599){
                         display: flex;
                     }
                     @include p(1024){
@@ -257,7 +257,7 @@ body.blog-2{
     
 
         .wp-block-navigation__responsive-container{
-                @include m(768){
+                @include m(599){
                     display: none !important;
                     &.has-modal-open.is-menu-open{
                         display: block !important;
@@ -301,7 +301,7 @@ body.blog-2{
             width: 55px;
             height: 30px;
             z-index: 2;
-            @media (min-width: 768px){
+            @media (min-width: 599px){
                 display: none !important;
             }
 
