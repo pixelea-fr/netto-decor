@@ -38,7 +38,7 @@ body.blog-2{
     .main-container{
         @include m(599){
             gap: 0;
-
+            flex-wrap: wrap;
             > .wp-block-group:first-child{
                 width : 100%;
             }
