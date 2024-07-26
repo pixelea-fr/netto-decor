@@ -204,5 +204,39 @@ body.blog-1{
             display: flex;
         }
     }
+    .is-style-slick{
+        position: relative;
+        &__prev,&__next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: white
+        }
+        &__prev{
+            left: 0;
+        }
+        &__next{
+            right: 0;
+        }
+    }
+    .is-style-slick{
+        ul.slick-dots{
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            
+            li{
+                display: inline-block;
+                margin: 0 5px;
+        }
+    }
 }
 
