@@ -131,6 +131,35 @@
           }
       });
 
+      if ( $('body.page-newsletters.blog-2').length > 0 ) {
+          
+   
+      var gal = $('body.page-newsletters.blog-2 .entry-content .wp-block-columns');    
+        var galcount = 1;
+        gal.each(function() {
+      //    galcount ++;
+          this_gal = $(this);
+          if (this_gal.find('.wp-block-image ').length >0 ){
+  
+                this_gal.find('.wp-block-image img').each(function() {
+                //var photos = $(this);
+                if($(this).attr("srcset")){
+                // urls = get_big_srcset(photos);
+                  urls = $(this).attr('src');
+                  $(this).wrap('<a href="'+urls+'" class="fancy-galery-'+galcount+'" data-fancybox="gallery">');
+                }
+              });
+            }
+          });
+  
+  
+          for(var i = 1; i <= galcount; i++){
+            Fancybox.bind(".fancy-galery-"+i, fancyoptions);
+          }
+    
+        }
+
+        
     });
     $(document).ready(function($) {
         function initializeSlickSliders() {

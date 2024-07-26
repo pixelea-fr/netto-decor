@@ -5,11 +5,12 @@
  * Cette fonction est actuellement commentée et n'est pas utilisée.
  */
 function wpdocs_theme_name_scripts() {
-    // Les enqueues de scripts et styles sont commentés ici
-    // Ils incluaient Lottie, Slick Carousel et Fancybox
+    /// Fancy Box
+    wp_enqueue_style('fancybox-css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css');
+    wp_enqueue_script('fancybox-js', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js', array('jquery'), null, true);
 }
 // L'action pour ajouter les scripts est également commentée
-//add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
 /**
  * Crée un shortcode pour afficher l'année en cours.
