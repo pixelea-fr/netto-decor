@@ -227,9 +227,11 @@ body.blog-1{
         flex-direction: column;
         gap: 1rem;
         input, textarea{
-            padding: .3em .5em !important; 
+            font-size: 1rem;
+            padding: .6em 1em !important; 
             border-radius: .3rem !important;  
             border-width: 1px !important;
+            max-width: 300px;
 
         }
         input[type="submit"]{
@@ -257,6 +259,11 @@ body.blog-1{
         >div{
             gap: 1rem;
             display: flex;
+            max-width: 678px;
+            justify-content: space-between;
+        }
+        .wpcf7-list-item{
+            margin: 0;
         }
     }
     .is-style-slick{
