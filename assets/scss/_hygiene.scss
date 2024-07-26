@@ -211,6 +211,8 @@ body.blog-2{
  .wp-block-navigation{
 
         .wp-block-navigation__container{
+            margin-inline-start: 0;
+            margin-right: 0;
             li.current-menu-item{
                 a{
                     color:#006331!important;
