@@ -398,110 +398,87 @@ body.blog-2{
 
     
 }
-// Variables 
-$form-max-width: 800px;
-$label-width: 30%;
-$input-width: 70%;
-$spacing: 10px;
-$primary-color: #006331; // Couleur verte du header
+
 
 .wpcf7-form {
-  max-width: $form-max-width;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-
-  p {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: $spacing;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
   }
-
-  label {
-    width: $label-width;
-    padding-right: $spacing;
-    text-align: right;
+  
+  .wpcf7-form p {
+    margin-bottom: 15px;
+  }
+  
+  .wpcf7-form label {
     font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
   }
-
-  .wpcf7-form-control-wrap {
-    width: $input-width;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 5px;
+  
+  .wpcf7-form-control.wpcf7-text,
+  .wpcf7-form-control.wpcf7-email,
+  .wpcf7-form-control.wpcf7-textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
   }
-
-  textarea {
-    height: 100px;
+  
+  .wpcf7-form-control.wpcf7-textarea {
+    resize: vertical;
   }
-
-  // Ajustement pour les cases à cocher
+  
   .wpcf7-checkbox {
+    margin-bottom: 15px;
+  }
+  
+  .wpcf7-list-item-label {
+    margin-left: 5px;
+    font-weight: normal;
+  }
+  
+  .wpcf7-form-control-wrap[data-name="rgpd"] {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .wpcf7-list-item {
-      margin-left: 0;
-    }
+    align-items: center;
   }
-
-  // Style pour le message (facultatif)
-  p:has(textarea) {
-    label {
-      align-self: flex-start;
-      padding-top: 5px;
-    }
+  
+  .wpcf7-form-control-wrap[data-name="rgpd"] .wpcf7-list-item-label {
+    margin-left: 10px;
   }
-
-  // Style pour les cases à cocher
-  p:has(.wpcf7-checkbox) {
-    flex-direction: column;
-    
-    .wpcf7-form-control-wrap {
-      width: 100%;
-      margin-left: $label-width;
-    }
-  }
-
-  // Style pour le bouton d'envoi
-  input[type="submit"] {
-    margin-left: $label-width;
-    background-color: $primary-color;
-    color: white;
+  
+  .wpcf7-form-control.wpcf7-submit {
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
+  }
+  
+  .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #333;
+  }
+  
+  .wpcf7-response-output {
+    margin-top: 20px;
+    color: red;
     font-weight: bold;
-
-    &:hover {
-      background-color: darken($primary-color, 10%);
-    }
+    display: none;
   }
-
-  // Style pour le message de politique de confidentialité
-  p:nth-last-child(3),
-  p:nth-last-child(2) {
-    margin-left: $label-width;
-    font-size: 0.9em;
+  
+  .wpcf7-not-valid-tip {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
   }
-}
-
-// Style pour le header du formulaire (à ajouter avant le formulaire)
-.form-header {
-  background-color: $primary-color;
-  color: white;
-  padding: 15px;
-  margin-bottom: $spacing * 2;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-}
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
 
 }
