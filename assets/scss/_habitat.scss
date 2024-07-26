@@ -212,7 +212,17 @@ body.blog-1{
             transform: translateY(-50%);
             width: 40px;
             height: 40px;
-            background-color: white
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            cursor: pointer;
+            transition: all .5s;
+            z-index:2;
+            &:hover{
+                background-color: var(--wp--preset--color--custom-blue);
+            }
         }
         &__prev{
             left: 0;
@@ -223,8 +233,10 @@ body.blog-1{
     }
     .is-style-slick{
         ul.slick-dots{
+            z-index:2;
             position: absolute;
             display: flex;
+            justify-content: center;
             bottom: 0;
             left: 0;
             right: 0;
@@ -232,6 +244,18 @@ body.blog-1{
             padding: 0;
             list-style: none;
             text-align: center;
+            button{
+                height: 1rem;
+                width: 1rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                background-color: white;
+                border: 1px solid var(--wp--preset--color--custom-blue);
+                color: var(--wp--preset--color--custom-blue);
+            
+            }
             
             li{
                 display: inline-block;
