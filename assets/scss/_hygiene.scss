@@ -57,6 +57,9 @@ body.blog-2{
             > .wp-block-group:first-child{
                 width : 20%;
                 max-width: 230px;
+                > .wp-block-template-part{
+                    width: 100%;
+                }
             }
             > .wp-block-group:last-child{
                 width: 77%;
@@ -216,12 +219,14 @@ body.blog-2{
             li.current-menu-item{
                 a{
                     color:#006331!important;
+                    
                 }
             }
             li{
-                background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331;
                 width: 100%;;
                 border-bottom: 5px solid white;
+                background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331;
+  
                 a{
                     text-transform: uppercase;
                     font-size: 14px;
@@ -232,19 +237,73 @@ body.blog-2{
                     text-decoration: none;
                 }
                 &.menu-rat{
-
+                    background: url("assets/img/hygiene-picto-menu_rat.gif") no-repeat scroll 0 0 #d3c100;
+    
+                    a{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #000;
+                        display: block;
+                        line-height: 22px;
+                        padding: 0 5px 3px 29px;
+                        text-decoration: none;
+                    }
                 }
                 &.menu-insect{
-
+                    background: url("assets/img/hygiene-picto-menu_desinsectisation.gif") no-repeat scroll 0 0 #cca000;
+                    width: 100%;;
+                    border-bottom: 5px solid white;
+                    a{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #000;
+                        display: block;
+                        line-height: 22px;
+                        padding: 0 5px 3px 29px;
+                        text-decoration: none;
+                    }
                     }
                 &.menu-infect{
-
+                    background: url("assets/img/hygiene-picto-menu_desinfection.gif") no-repeat scroll 0 0 #c47800;
+                    width: 100%;;
+                    border-bottom: 5px solid white;
+                    a{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #000;
+                        display: block;
+                        line-height: 22px;
+                        padding: 0 5px 3px 29px;
+                        text-decoration: none;
+                    }
                     }
                 &.menu-env{
-
+                    background: url("assets/img/hygiene-picto-menu_environnement.gif") no-repeat scroll 0 0 #abb000;
+                    width: 100%;;
+                    border-bottom: 5px solid white;
+                    a{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #000;
+                        display: block;
+                        line-height: 22px;
+                        padding: 0 5px 3px 29px;
+                        text-decoration: none;
+                    }
                     }
                 &.menu-guepes{  
-
+                    background: url("assets/img/hygiene-picto-menu_guepes.gif") no-repeat scroll 0 0 #FC0505;
+                    width: 100%;;
+                    border-bottom: 5px solid white;
+                    a{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #FFED00;
+                        display: block;
+                        line-height: 22px;
+                        padding: 0 5px 3px 29px;
+                        text-decoration: none;
+                    }
                 }
             }
         }
