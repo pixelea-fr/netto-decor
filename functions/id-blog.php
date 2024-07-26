@@ -14,6 +14,8 @@ function desactiver_jetpack_block_slideshow() {
         if ( $blog_id == 1 ){
             wp_dequeue_script( 'jetpack-block-slideshow' );
             wp_deregister_script( 'jetpack-block-slideshow' );
+            wp_dequeue_style( 'jetpack-block-slideshow');
+            wp_deregister_style( 'jetpack-block-slideshow');
         }
     }
 }
