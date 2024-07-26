@@ -399,6 +399,82 @@ body.blog-2{
     
 }
 
-  
+  // Variables
+$form-max-width: 800px;
+$grid-gap: 10px;
+$input-padding: 5px;
+$label-padding-right: 10px;
+
+// Mixins
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin grid-column($start, $end: $start) {
+  grid-column: #{$start} / #{$end};
+}
+
+// Styles
+.wpcf7-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $grid-gap;
+  max-width: $form-max-width;
+  margin: 0 auto;
+
+  p {
+    display: contents;
+  }
+
+  label {
+    @include grid-column(1);
+    text-align: right;
+    padding-right: $label-padding-right;
+  }
+
+  .wpcf7-form-control-wrap {
+    @include grid-column(2);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @include full-width;
+    padding: $input-padding;
+  }
+
+  // Style pour les cases à cocher
+  .wpcf7-checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Style pour le bouton d'envoi
+  input[type="submit"] {
+    @include grid-column(2);
+    justify-self: start;
+    margin-top: $grid-gap;
+  }
+
+  // Style pour le message (facultatif)
+  p:has(textarea) {
+    @include grid-column(1, -1);
+
+    label {
+      text-align: left;
+    }
+  }
+
+  // Style pour la case RGPD
+  p:has([name="rgpd[]"]) {
+    @include grid-column(1, -1);
+  }
+
+  // Style pour le texte de la politique de confidentialité
+  p:nth-last-child(3) {
+    @include grid-column(1, -1);
+  }
+}
+
 
 }
