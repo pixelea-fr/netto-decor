@@ -28,6 +28,14 @@ body.blog-2{
         padding-left: 70px;
         background-size: auto 100% !important;
     }
+    &.page-accueil{
+        .main-container{
+            > .wp-block-group:last-child{
+               padding: 0 !important;
+            }
+        }
+    }
+
     
     background: #006331 url("assets/img/fond.jpg") repeat-x top;
 
@@ -245,7 +253,7 @@ body.blog-2{
 
     hr{
         border: none;
-        border-top: 2px dashed #000; // Utilise la couleur verte du thème
+        border-top: 1px dashed #000; // Utilise la couleur verte du thème
         color: transparent;
         background-color: transparent;
         height: 1px;
