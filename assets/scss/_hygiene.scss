@@ -35,6 +35,13 @@ body.blog-2{
                     width: 79% !important;
                     padding-right: 0px !important;
                 }
+
+                @include m(600){
+                    padding: 0 !important;
+                    .wp-block-columns{  
+                        padding: 0 var(--wp--preset--spacing--6) !important;
+                    }
+                }
             }
  
             h2{
@@ -116,6 +123,8 @@ body.blog-2{
             }
             > .wp-block-group:last-child{
                 width: 100%;
+                padding-right: var(--wp--preset--spacing--2);
+                padding-left: var(--wp--preset--spacing--2);
             }
 
         }
@@ -130,6 +139,7 @@ body.blog-2{
             > .wp-block-group:last-child{
                 width: 77%;
                 padding-bottom: 60px !important;
+
             }
         }
 
@@ -186,6 +196,25 @@ body.blog-2{
         margin-top: 2rem;
         position:sticky;
         top:100px;
+
+         .wp-block-navigation__responsive-container-open .burger-icon {
+            position: fixed;
+            top: 0.5em;
+            left: 0.5em;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(3px);
+            border-radius: 0.5em;
+            width: 3em;
+            height: 3em;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+            padding: 0.2em;
+            gap: 0.5em;
+            cursor: pointer;
+        }
+
         .wp-block-pages-list__item{
             justify-content: stretch;
             width: 100%;
