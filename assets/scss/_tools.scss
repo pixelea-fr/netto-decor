@@ -5,7 +5,7 @@
 
 
 
-@include m(782){
+@include m(600){
     .columns-inverse{
         flex-direction: column-reverse !important;
     }
@@ -15,20 +15,20 @@
     }
 }
 
-@include p(769){
+@include p(600){
     .mobile{
         display: none !important;
     }
 }
 
-@include m(768){
+@include m(600){
     .desktop{
         display: none !important;
     }
 }
 
 
-@include p(768){
+@include p(600){
     .zoom { 
         transform: scale(1.2);
     }
