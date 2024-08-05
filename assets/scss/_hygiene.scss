@@ -301,16 +301,21 @@ body.blog-2{
             height: 0px !important;
         }
         .wp-block-navigation__responsive-container-close{
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(3px);
             border-radius: 0.5em;
             top: 0.5em;
             right: 0.5em;
             width: 4em;
             height: 3em;
+            align-items: center;
+            justify-content: center;
+            display: flex;
             cursor: pointer;
             svg{
-                fill: #006331;
+                fill: #fff;
+                width: 35px;
+                height: 35px;
             }
         }
         .wp-block-navigation__responsive-container-open .burger-icon {
