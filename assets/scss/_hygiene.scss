@@ -272,6 +272,7 @@ body.blog-2{
             margin-inline-start: 0;
             margin-right: 0;
             margin-top: 0;
+            gap: 6px;
             li.current-menu-item{
                 a{
                  //   color:#006331!important;
@@ -281,7 +282,7 @@ body.blog-2{
             li{
                 width: 100%;;
                 font-weight: 700;
-                padding: 0 5px 3px 29px;
+                padding: 1px 5px 1px 29px;
                 display: block;
                 line-height: 22px;
                 text-decoration: none;
@@ -289,8 +290,6 @@ body.blog-2{
                 text-transform: uppercase;
         //        border-bottom: 5px solid white;
                 background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331;
-       
-  
                 a{
                     color: #ffffff !important;
                 }
@@ -298,7 +297,7 @@ body.blog-2{
                 &.menu-accueil{
                     background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
                     a{
-                        color: #006331;
+                        color: #006331 !important;
                     }
                 }
                 &.menu-rat{
