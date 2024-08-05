@@ -207,6 +207,7 @@ body.blog-2{
             background-position: right;
             position: absolute;
             width: 100%;
+            max-width: 1200px;
             height: 60px;
             margin-top: -33px;
         }
@@ -355,7 +356,7 @@ body.blog-2{
             li.current-menu-item{
                 a{
                  //   color:#006331!important;
-      
+                    
                 }
             }
             li{
@@ -371,6 +372,7 @@ body.blog-2{
                 background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331;
                 a{
                     color: #ffffff !important;
+                    width: 100%;
                 }
                 border: 1px solid transparent;
                 &:hover{
@@ -382,16 +384,19 @@ body.blog-2{
                 }
 
                 &.menu-accueil{
-                    background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
-                    a{
-                        color: #006331 !important;
-                    }
-                    &:hover{
-                        background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331 !important;
-                        border: 1px solid transparent !important;
+                    @include p(600){
+                        background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
                         a{
-                            color: #fff !important;
+                            color: #006331 !important;
                         }
+                        &:hover{
+                            background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331 !important;
+                            border: 1px solid transparent !important;
+                            a{
+                                color: #fff !important;
+                            }
+                        }
+                                    
                     }
                 }
                 &.menu-rat{
@@ -522,7 +527,9 @@ body.blog-2{
                     &.has-modal-open.is-menu-open{
                         display: block !important;
                     }
-                    background-color: #fff !important;
+                    background-color: #006331;
+                    padding: 0;
+                    margin: 0;
                     height: 100vh;;
                 }
 
