@@ -192,70 +192,7 @@ body.blog-2{
         }
 
     }
-    .wp-block-navigation{
-
-        .wp-block-navigation__responsive-container-open .burger-icon {
-            position: fixed;
-            top: 0.5em;
-            left: 0.5em;
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(3px);
-            border-radius: 0.5em;
-            width: 3em;
-            height: 3em;
-            display: flex;
-            flex-direction: column;
-            align-items: baseline;
-            justify-content: center;
-            padding: 0.2em;
-            gap: 0.5em;
-            cursor: pointer;
-        }
-        
-        .wp-block-navigation__container.is-vertical{
-            margin-top: 2rem;
-            position:sticky;
-            top:100px;
-
-            .wp-block-pages-list__item{
-                justify-content: stretch;
-                width: 100%;
-            }
-            .wp-block-pages-list__item__link{
-                padding-left: 2rem;
-                padding-top: 0.3rem;
-                padding-bottom: 0.3rem;
-                background: #e2e4e5;
-                width: 100%;
-                overflow: hidden;
-                transition: all .4s, transform 1s;
-
-                &:before{
-                    transition: transform 1s;
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    bottom: 0;
-                    width: 0;
-                    height: 0;
-                    border-top: 1rem solid transparent;
-                    border-bottom: 1rem solid transparent;
-                    border-left: 1rem solid #e2e4e5;
-                }
-                &:hover{
-                    text-decoration: none;
-                    color: white;
-                    background: var(--wp--preset--color--custom-blue);
-                    &:before{
-                        transform: translateX(0) translateY(-50%);
-                    }
-                }
-
-            }
-        }
-    }
+ 
      footer.wp-block-template-part{
         margin-block-start: 0px;
         &:before{
@@ -330,13 +267,82 @@ body.blog-2{
     /// 
 
 
- .wp-block-navigation{
-        .scrolled &{
+    .wp-block-navigation{
+
+        .wp-block-navigation__responsive-container-open .burger-icon {
             position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 10;
+            top: 0.5em;
+            left: 0.5em;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(3px);
+            border-radius: 0.5em;
+            width: 3em;
+            height: 3em;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+            padding: 0.2em;
+            gap: 0.5em;
+            cursor: pointer;
+            span {
+                background-color: #006331;
+                height: 2px;
+                width: 100%;;
+                display: inline-block;
+                margin-top: 6px;
+
+            }
+            span:first-child, span:last-child{
+                width: 80%;;
+            }
+            
         }
+
+        .wp-block-navigation__container.is-vertical{
+            margin-top: 2rem;
+            position:sticky;
+            top:100px;
+
+            .wp-block-pages-list__item{
+                justify-content: stretch;
+                width: 100%;
+            }
+            .wp-block-pages-list__item__link{
+                padding-left: 2rem;
+                padding-top: 0.3rem;
+                padding-bottom: 0.3rem;
+                background: #e2e4e5;
+                width: 100%;
+                overflow: hidden;
+                transition: all .4s, transform 1s;
+
+                &:before{
+                    transition: transform 1s;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    bottom: 0;
+                    width: 0;
+                    height: 0;
+                    border-top: 1rem solid transparent;
+                    border-bottom: 1rem solid transparent;
+                    border-left: 1rem solid #e2e4e5;
+                }
+                &:hover{
+                    text-decoration: none;
+                    color: white;
+                    background: var(--wp--preset--color--custom-blue);
+                    &:before{
+                        transform: translateX(0) translateY(-50%);
+                    }
+                }
+
+            }
+        }
+    
         .wp-block-navigation__container{
             margin-inline-start: 0;
             margin-right: 0;
@@ -502,24 +508,7 @@ body.blog-2{
                 display: none !important;
             }
 
-            .burger-icon{
-             
-                width: 55px;
-                height: 30px;
-                display: flex;
-                flex-direction: column;
-                span {
-                    background-color: #006331;
-                    height: 2px;
-                    width: 100%;;
-                    display: inline-block;
-                    margin-top: 6px;
-    
-                }
-                span:first-child, span:last-child{
-                    width: 80%;;
-                }
-            }
+
         }
     
 
