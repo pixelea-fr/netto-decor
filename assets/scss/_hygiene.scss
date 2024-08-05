@@ -147,6 +147,7 @@ body.blog-2{
                 width: 100%;
                 padding-right: var(--wp--preset--spacing--2) !important;
                 padding-left: var(--wp--preset--spacing--2) !important;
+                padding-top: 0px !important;
             }
 
         }
@@ -162,6 +163,11 @@ body.blog-2{
                 width: 77%;
                 padding-bottom: 60px !important;
 
+            }
+        }
+        > .wp-block-group:last-child{
+            ul{
+                list-style: disc;
             }
         }
 
@@ -294,11 +300,24 @@ body.blog-2{
         @include m(600){
             height: 0px !important;
         }
+        .wp-block-navigation__responsive-container-close{
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(3px);
+            border-radius: 0.5em;
+            top: 0.5em;
+            right: 0.5em;
+            width: 28px;
+            height: 28px;;
+            cursor: pointer;
+            svg{
+                fill: #006331;
+            }
+        }
         .wp-block-navigation__responsive-container-open .burger-icon {
             position: fixed;
             top: 0.5em;
             left: 0.5em;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(3px);
             border-radius: 0.5em;
             width: 4em;
@@ -409,7 +428,7 @@ body.blog-2{
                         img {
                             width: 100% !important;
                             position: fixed;
-                            top: 45px;
+                            top: Opx;
                             left: 0;
                         }
                     }
@@ -583,17 +602,7 @@ body.blog-2{
                 height: 100%;;
             }
         }
-        .wp-block-navigation__responsive-container-close{
-            
-            padding: 10px;
-            border-radius: 50%;
-            svg{
-                fill: #fff ;
-                width: 28px;
-                height: 28px;;
-            }
 
-        }
         .wp-block-navigation__responsive-container-open{
             display: flex !important;
             width: 55px;
