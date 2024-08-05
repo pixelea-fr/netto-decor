@@ -91,8 +91,12 @@ body.blog-2{
 
     line-height: 160%;
     overflow-x: hidden;
+    > .wp-site-blocks{
+         .wp-block-template-part {
+            background: linear-gradient(to bottom, #fff 90%, #00633117 10%);
+         }
+    }
     .wp-block-group.header{
-        background: linear-gradient(to bottom, #fff 90%, #00633117 10%);
         height: 100%;
         figure.wp-block-image{
             position: relative;
