@@ -33,6 +33,22 @@ body.blog-2{
             > .wp-block-group:last-child{
                padding: 0 !important;
             }
+            h2{
+                border-radius: 5px;
+                background: #ffed00 url("assets/img/fleche.svg")  top left no-repeat !important;
+                color: #000;
+                padding-left: 70px;
+                background-size: auto 100% !important;
+                margin-top: 15px;
+                padding-left: 40px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                height: auto;
+                font-size: 20px;
+                ul{
+                    list-style-type: disc;
+                }
+            }
         }
     }
 
@@ -205,6 +221,19 @@ body.blog-2{
     }
     .wp-block-template-part footer{
         margin-block-start: 0px;
+        &:before{
+            content:"";
+            background-image: url('assets/img/cafards.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            position: absolute;
+            margin-right: -215px;
+            width: 485px;
+            height: 60px;
+            margin-left: 485px;
+            margin-top: -33px;
+        }
     }
 
     h1, h2, h3, h4, h5, h6 {
