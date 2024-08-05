@@ -31,7 +31,11 @@ body.blog-2{
     &.page-accueil{
         .main-container{
             > .wp-block-group:last-child{
-               padding: 0 !important;
+               width: 79% !important;
+               padding-right: 0px !important;
+            }
+            > .wp-block-group:first-child{
+
             }
             h2{
                 border-radius: 16px;
@@ -98,7 +102,7 @@ body.blog-2{
                 text-align: center;
             }
              .wp-block-jetpack-slideshow_pagination {
-                justify-content: center;
+                display: none;
             }
         }
         @include m(599){
@@ -125,6 +129,7 @@ body.blog-2{
             }
             > .wp-block-group:last-child{
                 width: 77%;
+                padding-bottom: 60px !important;
             }
         }
 
@@ -226,12 +231,11 @@ body.blog-2{
             background-image: url('assets/img/cafards.png');
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: center;
+            background-position: right;
             position: absolute;
-            margin-right: -215px;
+            width: 100%;
             width: 485px;
             height: 60px;
-            margin-left: 485px;
             margin-top: -33px;
         }
     }
