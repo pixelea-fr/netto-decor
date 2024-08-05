@@ -32,8 +32,12 @@ body.blog-2{
         .main-container{
             > .wp-block-group:last-child{
                 @include p(600){
-                    width: 79% !important;
+                    width: 81% !important;
                     padding-right: 0px !important;
+                    padding-left: 72px !important;
+                    .wp-block-columns{  
+                        padding: 0 var(--wp--preset--spacing--6) !important;
+                    }
                 }
 
                 @include m(600){
@@ -276,7 +280,7 @@ body.blog-2{
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(3px);
             border-radius: 0.5em;
-            width: 3em;
+            width: 4em;
             height: 3em;
             display: flex;
             flex-direction: column;
@@ -374,6 +378,12 @@ body.blog-2{
                     a{
                         color: #006331 !important;
                     }
+                    &:hover{
+                        background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331 !important;
+                        a{
+                            color: #fff;
+                        }
+                    }
                 }
                 &.menu-rat{
                     background: url("assets/img/hygiene-picto-menu_rat.png") no-repeat scroll 0 0 #d3c100  !important;
@@ -382,12 +392,24 @@ body.blog-2{
                     a{
                         color: #000 !important;
                     }
+                    &:hover{
+                        background: url("assets/img/hygiene-picto-menu_rat.png") no-repeat scroll 0 0 #000  !important;
+                        a{
+                            color: #d3c100 !important;
+                        }
+                    }
                 }
                 &.menu-insect{
                     background: url("assets/img/hygiene-picto-menu_desinsectisation.png") no-repeat scroll 0 0 #cca000 !important;
                     background-size: 25px 25px !important;
                     a{
                         color: #000 !important;
+                    }
+                    &:hover{
+                        background: url("assets/img/hygiene-picto-menu_desinsectisation.png") no-repeat scroll 0 0 #000 !important;
+                        a{
+                            color: #cca000 !important;
+                        }
                     }
                 }
                 &.menu-infect{
@@ -396,6 +418,12 @@ body.blog-2{
                     a{
                         color: #000 !important;
                     }
+                    &:hover{
+                        background: url("assets/img/hygiene-picto-menu_desinfection.png") no-repeat scroll 0 0 #000 !important;
+                        a{
+                            color: #c47800 !important;
+                        }
+                    }
                 }
                 &.menu-env{
                     background: url("assets/img/hygiene-picto-menu_environnement.png") no-repeat scroll 0 0 #abb000 !important;
@@ -403,12 +431,24 @@ body.blog-2{
                     a{
                         color: #000 !important;
                     }
+                    &:hover{
+                        background: url("assets/img/hygiene-picto-menu_environnement.png") no-repeat scroll 0 0 #000 !important;
+                        a{
+                            color: #abb000 !important;
+                        }
+                    }
                 }
                 &.menu-guepes{  
                     background: url("assets/img/hygiene-picto-menu_guepes.png") no-repeat scroll 0 0 #FC0505 !important;
                     background-size: 25px 25px !important;
                     a{
                         color: #FFED00 !important;
+                    }
+                    &:hover{
+                        background: url("assets/img/hygiene-picto-menu_guepes.png") no-repeat scroll 0 0 #FFED00 !important;
+                        a{
+                            color: #FC0505 !important;
+                        }
                     }
                 }
             }
