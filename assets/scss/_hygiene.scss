@@ -40,22 +40,22 @@ body.blog-2{
                     }
        
                 }
+            }
+            @include m(600){
+                padding: 0 !important;
 
-                @include m(600){
-                    padding: 0 !important;
+                > .wp-block-group:last-child{
+                    order: 1;
                     .wp-block-columns{  
                         padding-right: var(--wp--preset--spacing--2) !important;
                         padding-left: var(--wp--preset--spacing--2) !important;
                         padding-bottom: var(--wp--preset--spacing--6) !important;
                     }
-                    > .wp-block-group:last-child{
-                        order: 1;
-                    }
-                    > .wp-block-group:first-child{
-                        order: 2;
-                    }
-   
                 }
+                > .wp-block-group:first-child{
+                    order: 2;
+                }
+
             }
  
             h2{
