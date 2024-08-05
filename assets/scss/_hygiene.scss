@@ -288,7 +288,8 @@ body.blog-2{
                 font-size: 14px;
                 text-transform: uppercase;
         //        border-bottom: 5px solid white;
-                background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331 !important;
+                background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331;
+       
   
                 a{
                     color: #ffffff !important;
@@ -302,6 +303,7 @@ body.blog-2{
                 }
                 &.menu-rat{
                     background: url("assets/img/hygiene-picto-menu_rat.png") no-repeat scroll 0 0 #d3c100  !important;
+                    background-size: 25px 25px !important;
     
                     a{
                         color: #000 !important;
@@ -309,24 +311,28 @@ body.blog-2{
                 }
                 &.menu-insect{
                     background: url("assets/img/hygiene-picto-menu_desinsectisation.png") no-repeat scroll 0 0 #cca000 !important;
+                    background-size: 25px 25px !important;
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-infect{
                     background: url("assets/img/hygiene-picto-menu_desinfection.png") no-repeat scroll 0 0 #c47800 !important;
+                    background-size: 25px 25px !important;
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-env{
                     background: url("assets/img/hygiene-picto-menu_environnement.png") no-repeat scroll 0 0 #abb000 !important;
+                    background-size: 25px 25px !important;
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-guepes{  
                     background: url("assets/img/hygiene-picto-menu_guepes.png") no-repeat scroll 0 0 #FC0505 !important;
+                    background-size: 25px 25px !important;
                     a{
                         color: #FFED00 !important;
                     }
