@@ -396,12 +396,15 @@ body.blog-2{
                         color: #006331 !important;
                     }
                 }
-                &.mobile.menu-logo {
+                li:first-child{
                     background : none !important;
-                    img {
-                        width: 100% !important;
-                        position: fixed;
-                        top: 0;
+                    .mobile.menu-logo {
+      
+                        img {
+                            width: 100% !important;
+                            position: fixed;
+                            top: 0;
+                        }
                     }
                 }
                 &.menu-accueil{
@@ -578,7 +581,7 @@ body.blog-2{
             padding: 10px;
             border-radius: 50%;
             svg{
-                fill: #006331 ;
+                fill: #fff ;
                 width: 28px;
                 height: 28px;;
             }
