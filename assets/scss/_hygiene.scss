@@ -36,14 +36,16 @@ body.blog-2{
                     padding-right: 0px !important;
                     padding-left: 72px !important;
                     .wp-block-columns{  
-                        padding: var(--wp--preset--spacing--6) !important 0;
+                        padding-bottom: var(--wp--preset--spacing--6) !important;
                     }
                 }
 
                 @include m(600){
                     padding: 0 !important;
                     .wp-block-columns{  
-                        padding: 0 var(--wp--preset--spacing--6) !important;
+                        padding-right: var(--wp--preset--spacing--2) !important;
+                        padding-left: var(--wp--preset--spacing--2) !important;
+                        padding-bottom: var(--wp--preset--spacing--6) !important;
                     }
                 }
             }
@@ -369,14 +371,14 @@ body.blog-2{
                 font-size: 14px;
                 text-transform: uppercase;
         //        border-bottom: 5px solid white;
-                background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331;
+                background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331 !important;
                 a{
                     color: #ffffff !important;
                     width: 100%;
                 }
                 border: 1px solid transparent;
                 &:hover{
-                    background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff;
+                    background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
                     border: 1px solid #006331;
                     a{
                         color: #006331 !important;
