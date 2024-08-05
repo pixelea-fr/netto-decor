@@ -275,7 +275,9 @@ body.blog-2{
 
 
     .wp-block-navigation{
-
+        @include m(600){
+            height: 0px;
+        }
         .wp-block-navigation__responsive-container-open .burger-icon {
             position: fixed;
             top: 0.5em;
