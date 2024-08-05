@@ -31,12 +31,12 @@ body.blog-2{
     &.page-accueil{
         .main-container{
             > .wp-block-group:last-child{
-               width: 79% !important;
-               padding-right: 0px !important;
+                @include p(600){
+                    width: 79% !important;
+                    padding-right: 0px !important;
+                }
             }
-            > .wp-block-group:first-child{
-
-            }
+ 
             h2{
                 border-radius: 16px;
                 background: #ffed00 url(assets/img/fleche.svg) top left no-repeat !important;
@@ -96,7 +96,7 @@ body.blog-2{
         }
     }
     .main-container{
-
+        gap: 0;
         .wp-block-jetpack-slideshow {
             figcaption{
                 text-align: center;
@@ -234,7 +234,6 @@ body.blog-2{
             background-position: right;
             position: absolute;
             width: 100%;
-            width: 485px;
             height: 60px;
             margin-top: -33px;
         }
@@ -300,7 +299,12 @@ body.blog-2{
 
 
  .wp-block-navigation{
-
+        .scrolled &{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
         .wp-block-navigation__container{
             margin-inline-start: 0;
             margin-right: 0;
