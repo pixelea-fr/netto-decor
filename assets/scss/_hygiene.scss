@@ -38,6 +38,7 @@ body.blog-2{
                     .wp-block-columns{  
                         padding-bottom: var(--wp--preset--spacing--6) !important;
                     }
+       
                 }
 
                 @include m(600){
@@ -47,6 +48,13 @@ body.blog-2{
                         padding-left: var(--wp--preset--spacing--2) !important;
                         padding-bottom: var(--wp--preset--spacing--6) !important;
                     }
+                    > .wp-block-group:last-child{
+                        order: 1;
+                    }
+                    > .wp-block-group:first-child{
+                        order: 2;
+                    }
+   
                 }
             }
  
@@ -386,7 +394,14 @@ body.blog-2{
                         color: #006331 !important;
                     }
                 }
-
+                &.mobile.menu-logo {
+                    background : none !important;
+                    img {
+                        width: 100%;
+                        position: fixed;
+                        top: 0;
+                    }
+                }
                 &.menu-accueil{
                     @include p(600){
                         background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
