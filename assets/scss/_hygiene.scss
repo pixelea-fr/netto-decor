@@ -3,27 +3,27 @@
 body.blog-2{
 
     &.page-deratisation h1 {
-        background: #d3c100 url("assets/img/hygiene-picto-menu_rat.gif")  top left no-repeat !important;
+        background: #d3c100 url("assets/img/hygiene-picto-menu_rat.png")  top left no-repeat !important;
         padding-left: 70px;
         background-size: auto 100% !important;
     }
     &.page-desinsectisation h1 {
-        background: #cca000 url("assets/img/hygiene-picto-menu_desinsectisation.gif")  top left no-repeat !important;
+        background: #cca000 url("assets/img/hygiene-picto-menu_desinsectisation.png")  top left no-repeat !important;
         padding-left: 70px;
         background-size: auto 100% !important;
     }
     &.page-desinfection h1 {
-        background: #cca000 url("assets/img/hygiene-picto-menu_desinfection.gif")  top left no-repeat !important;
+        background: #cca000 url("assets/img/hygiene-picto-menu_desinfection.png")  top left no-repeat !important;
         padding-left: 70px;
         background-size: auto 100% !important;
     }
     &.page-environnement h1 {
-        background: #abb000 url("assets/img/hygiene-picto-menu_environnement.gif")  top left no-repeat !important;
+        background: #abb000 url("assets/img/hygiene-picto-menu_environnement.png")  top left no-repeat !important;
         padding-left: 70px;
         background-size: auto 100% !important;
     }
     &.page-guepes-frelons h1 {
-        background: #fc0505 url("assets/img/hygiene-picto-menu_guepes.gif")  top left no-repeat !important;
+        background: #fc0505 url("assets/img/hygiene-picto-menu_guepes.png")  top left no-repeat !important;
         color: #ffed00;
         padding-left: 70px;
         background-size: auto 100% !important;
@@ -293,33 +293,40 @@ body.blog-2{
                 a{
                     color: #ffffff !important;
                 }
+
+                &.menu-accueil{
+                    background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
+                    a{
+                        color: #006331;
+                    }
+                }
                 &.menu-rat{
-                    background: url("assets/img/hygiene-picto-menu_rat.gif") no-repeat scroll 0 0 #d3c100  !important;
+                    background: url("assets/img/hygiene-picto-menu_rat.png") no-repeat scroll 0 0 #d3c100  !important;
     
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-insect{
-                    background: url("assets/img/hygiene-picto-menu_desinsectisation.gif") no-repeat scroll 0 0 #cca000 !important;
+                    background: url("assets/img/hygiene-picto-menu_desinsectisation.png") no-repeat scroll 0 0 #cca000 !important;
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-infect{
-                    background: url("assets/img/hygiene-picto-menu_desinfection.gif") no-repeat scroll 0 0 #c47800 !important;
+                    background: url("assets/img/hygiene-picto-menu_desinfection.png") no-repeat scroll 0 0 #c47800 !important;
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-env{
-                    background: url("assets/img/hygiene-picto-menu_environnement.gif") no-repeat scroll 0 0 #abb000 !important;
+                    background: url("assets/img/hygiene-picto-menu_environnement.png") no-repeat scroll 0 0 #abb000 !important;
                     a{
                         color: #000 !important;
                     }
                 }
                 &.menu-guepes{  
-                    background: url("assets/img/hygiene-picto-menu_guepes.gif") no-repeat scroll 0 0 #FC0505 !important;
+                    background: url("assets/img/hygiene-picto-menu_guepes.png") no-repeat scroll 0 0 #FC0505 !important;
                     a{
                         color: #FFED00 !important;
                     }
