@@ -372,6 +372,14 @@ body.blog-2{
                 a{
                     color: #ffffff !important;
                 }
+                border: 1px solid transparent;
+                &:hover{
+                    background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff;
+                    border: 1px solid #006331;
+                    a{
+                        color: #006331 !important;
+                    }
+                }
 
                 &.menu-accueil{
                     background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #fff !important;
@@ -380,8 +388,9 @@ body.blog-2{
                     }
                     &:hover{
                         background: url("assets/img/hygiene-picto-sep.gif") no-repeat scroll 0 0 #006331 !important;
+                        border: 1px solid transparent !important;
                         a{
-                            color: #fff;
+                            color: #fff !important;
                         }
                     }
                 }
@@ -393,7 +402,9 @@ body.blog-2{
                         color: #000 !important;
                     }
                     &:hover{
+                        border: 1px solid transparent !important;
                         background: url("assets/img/hygiene-picto-menu_rat.png") no-repeat scroll 0 0 #000  !important;
+                        background-size: 25px 25px !important;
                         a{
                             color: #d3c100 !important;
                         }
@@ -406,7 +417,9 @@ body.blog-2{
                         color: #000 !important;
                     }
                     &:hover{
+                        border: 1px solid transparent !important;
                         background: url("assets/img/hygiene-picto-menu_desinsectisation.png") no-repeat scroll 0 0 #000 !important;
+                        background-size: 25px 25px !important;
                         a{
                             color: #cca000 !important;
                         }
@@ -419,7 +432,9 @@ body.blog-2{
                         color: #000 !important;
                     }
                     &:hover{
+                        border: 1px solid transparent !important;
                         background: url("assets/img/hygiene-picto-menu_desinfection.png") no-repeat scroll 0 0 #000 !important;
+                        background-size: 25px 25px !important;
                         a{
                             color: #c47800 !important;
                         }
@@ -432,7 +447,9 @@ body.blog-2{
                         color: #000 !important;
                     }
                     &:hover{
+                        border: 1px solid transparent !important;
                         background: url("assets/img/hygiene-picto-menu_environnement.png") no-repeat scroll 0 0 #000 !important;
+                        background-size: 25px 25px !important;
                         a{
                             color: #abb000 !important;
                         }
@@ -445,7 +462,9 @@ body.blog-2{
                         color: #FFED00 !important;
                     }
                     &:hover{
+                        border: 1px solid transparent !important;
                         background: url("assets/img/hygiene-picto-menu_guepes.png") no-repeat scroll 0 0 #FFED00 !important;
+                        background-size: 25px 25px !important;
                         a{
                             color: #FC0505 !important;
                         }
