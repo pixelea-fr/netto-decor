@@ -35,6 +35,7 @@ body.blog-2{
                     width: 81% !important;
                     padding-right: 0px !important;
                     padding-left: 72px !important;
+                    padding-bottom: 30px!important;
                     .wp-block-columns{  
                         padding-bottom: var(--wp--preset--spacing--6) !important;
                     }
@@ -160,9 +161,9 @@ body.blog-2{
                 }
             }
             > .wp-block-group:last-child{
-                width: 77%;
+                width: 80%;
                 padding-bottom: 60px !important;
-
+                padding-right: 0 !important;
             }
         }
         > .wp-block-group:last-child{
@@ -429,7 +430,6 @@ body.blog-2{
                 &:first-child{
                     background : none !important;
                     .mobile.menu-logo {
-      
                         img {
                             width: 100% !important;
                             position: fixed;
