@@ -128,14 +128,14 @@ body.blog-2{
 
     /* Media query pour les écrans plus petits */
     @include m(1200) {
-        body.blog-2:after {
+        &:after{
             height: 700px; /* Ajustement de la hauteur pour les écrans plus petits */
             top: 150px; /* Ajustement du top pour les écrans plus petits */
         }
     }
 
     @include m(768) {
-        body.blog-2:after {
+        &:after{
             height: 500px; /* Réduction de la hauteur pour les très petits écrans */
             top: 100px; /* Ajustement supplémentaire pour les très petits écrans */
         }
