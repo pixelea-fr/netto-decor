@@ -302,7 +302,7 @@ font-weight: initial;
   .only-desk{
     display: none;
     @include p(960){
-        display: block;
+        display: flex;
     }
   }
   .only-mobile{
