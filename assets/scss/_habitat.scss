@@ -234,7 +234,7 @@ body.blog-1{
             border-width: 1px !important;
             max-width: 300px;
             &[name="autres"]{
-                width: 100%;
+                width: min(75vw,100%);
                 max-width: 100%;
             }
 
