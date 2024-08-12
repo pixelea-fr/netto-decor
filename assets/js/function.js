@@ -173,7 +173,7 @@
                     // Initialiser Slick slider sur cet élément
                     $('#' + this.id).slick({
                         // Options de Slick slider
-                        dots: true,
+                        dots: false,
                         infinite: true,
                         speed: 300,
                         slidesToShow: 1,
@@ -185,7 +185,7 @@
                 }else{
                     $(".slick").slick({
                         // Options de Slick slider
-                        dots: true,
+                        dots: false,
                         infinite: true,
                         speed: 300,
                         slidesToShow: 1,
