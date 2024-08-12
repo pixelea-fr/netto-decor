@@ -258,7 +258,7 @@ body.blog-1{
             margin-bottom: .2rem;
             margin-top: 0.3rem;
             span{
-font-weight: initial;
+                font-weight: initial;
             }
         }
         p{
@@ -268,7 +268,7 @@ font-weight: initial;
             gap: 1rem;
             display: flex;
             flex-wrap: wrap;
-            max-width: 678px;
+            max-width: max(678px,90%);
             justify-content: space-between;
 
             @include m(1024){
@@ -283,7 +283,7 @@ font-weight: initial;
   
 }
 
-.iframe-response__container {
+.iframe-responsive__container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* Ratio 16:9 pour la vidéo, ajustez si nécessaire */
@@ -291,7 +291,7 @@ font-weight: initial;
     overflow: hidden;
   }
   
-  .iframe-response__container iframe {
+  .iframe-responsive__container iframe {
     position: absolute;
     top: 0;
     left: 0;
