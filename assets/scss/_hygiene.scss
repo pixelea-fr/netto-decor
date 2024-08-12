@@ -4,29 +4,50 @@ body.blog-2{
 
     &.page-deratisation h1 {
         background: #d3c100 url("assets/img/hygiene-picto-menu_rat.png")  top left no-repeat !important;
-        padding-left: 70px;
+        padding-left: 4rem;
         background-size: auto 100% !important;
+        @include m(600){
+            font-size: 7vw;
+            padding-left: 3rem;
+        }
     }
     &.page-desinsectisation h1 {
         background: #cca000 url("assets/img/hygiene-picto-menu_desinsectisation.png")  top left no-repeat !important;
-        padding-left: 70px;
+        padding-left: 4rem;
         background-size: auto 100% !important;
+        @include m(600){
+            font-size: 7vw;
+            padding-left: 3rem;
+        }
+
     }
     &.page-desinfection h1 {
         background: #cca000 url("assets/img/hygiene-picto-menu_desinfection.png")  top left no-repeat !important;
-        padding-left: 70px;
+        padding-left: 4rem;
         background-size: auto 100% !important;
+        @include m(600){
+            font-size: 7vw;
+            padding-left: 3rem;
+        }
     }
     &.page-environnement h1 {
         background: #abb000 url("assets/img/hygiene-picto-menu_environnement.png")  top left no-repeat !important;
-        padding-left: 70px;
+        padding-left: 4rem;
         background-size: auto 100% !important;
+        @include m(600){
+            font-size: 7vw;
+            padding-left: 3rem;
+        }
     }
     &.page-guepes-frelons h1 {
         background: #fc0505 url("assets/img/hygiene-picto-menu_guepes.png")  top left no-repeat !important;
         color: #ffed00;
-        padding-left: 70px;
+        padding-left: 4rem;
         background-size: auto 100% !important;
+        @include m(600){
+            font-size: 7vw;
+            padding-left: 3rem;
+        }
     }
     &.page-accueil{
         .main-container{
