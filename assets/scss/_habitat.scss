@@ -299,3 +299,15 @@ font-weight: initial;
     height: 100%;
   }
 
+  .only-desk{
+    display: none;
+    @include p(960){
+        display: block;
+    }
+  }
+  .only-mobile{
+    display: none;
+    @include m(960){
+        display: block;
+    }
+  }
